@@ -1,0 +1,24 @@
+{
+  "name": "View In Times Machine",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Link an open New York Times archive article to the Times Machine",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": { "16": "images/icon-tm-16x16-262626.png",
+           "48": "images/icon-timesmachine-48x48-262626.png",
+          "128": "images/icon-timesmachine-128x128-262626.png" 
+  },
+"browser_action": {
+    "default_icon": {
+      "19": "images/icon-tm-19x19-262626.png",
+      "38": "images/icon-tm-38x38-262626.png"
+    },
+    "default_title": "View in Times Machine"
+  },
+"permissions": [
+      "tabs",
+      "*://*.nytimes.com/*"
+  ]
+}
