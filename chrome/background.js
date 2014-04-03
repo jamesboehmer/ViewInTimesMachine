@@ -17,7 +17,7 @@ function prepareLink(url){
   });
   var res = params['res'];
   var isQuery = anchor.hostname.match('query|select');
-  var isGST = anchor.pathname.match('/gst/');
+  var isGST = anchor.pathname.match('/gst/|/mem/archive-free/pdf');
   if(isQuery && isGST && res){
     currentTimesMachineLink=timesMachineBaseURL + res;
     chrome.browserAction.setIcon({path:{ 19 : "images/icon-tm-19x19-262626.png", 38 : "images/icon-tm-38x38-262626.png"}});
